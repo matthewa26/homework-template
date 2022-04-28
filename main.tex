@@ -5,9 +5,19 @@
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{tikz}
 \usepackage[plain]{algorithm}
 \usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{csquotes}
+
+
+%\usetikzlibrary{automata,positioning}
+% The previous line was commented out because automata is not available in Overleaf.
 
 %
 % This template was adapted from https://github.com/jdavis/latex-homework-template
@@ -39,6 +49,10 @@
 \renewcommand\headrulewidth{0.4pt}
 \renewcommand\footrulewidth{0.4pt}
 \renewcommand{\qedsymbol}{\rule{0.7em}{0.7em}}
+\newcommand{\xor}{\operatorname{xor}}
+
+% End of proof black square instead of white square
+%\renewcommand{\qedsymbol}{$\blacksquare$}
 
 \setlength\parindent{0pt}
 
@@ -68,9 +82,9 @@
 %
 % This environment takes an optional argument. When given, it will adjust the
 % problem counter. This is useful for when the problems given for your
-% assignment aren't sequential.
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
 %
-
 \newenvironment{homeworkProblem}[1][-1]{
     \ifnum#1>0
         \setcounter{homeworkProblemCounter}{#1}
@@ -92,8 +106,14 @@
 %   - Author
 %
 
-\newcommand{\hmwkTitle}{Homework\ \#1}
-\newcommand{\hmwkDueDate}{January 19, 2022}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+%                                                                     %
+%                         HOMEWORK METADATA                           %
+%                                                                     %
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\newcommand{\hmwkTitle}{Homework\ \#21}
+\newcommand{\hmwkDueDate}{January 1, 2022}
 \newcommand{\hmwkClass}{Math 3345}
 \newcommand{\hmwkClassTime}{}
 \newcommand{\hmwkClassInstructor}{Dr. Max Kutler}
@@ -140,6 +160,14 @@
 \newcommand{\Var}{\mathrm{Var}}
 \newcommand{\Cov}{\mathrm{Cov}}
 \newcommand{\Bias}{\mathrm{Bias}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\lcm}{\operatorname{lcm}}
+%\newcommand{\xor}{\operatorname{xor}}
+
+% alpha-based item modifier on enumerate: [label=(\alph*)]
 
 \begin{document}
 
@@ -155,32 +183,35 @@
     %%%%% Problem Statement Ends Here
     
     \textbf{Solution} \\
-    \textbf{Part 1} % Comment this out if the solution is only one part.
+    \textbf{Part (a)} % Comment this out if the solution is only one part.
     \begin{proof}
-        %%%%% Solution Starts Here (assuming proof)
-        
-        
-        %%%%% Solution Ends Here (assuming proof)
+    %%%%% Solution Starts Here
+    
+    %%%%% Solution Ends Here
     \end{proof}
-
-\end{homeworkProblem}
-
-% Use vspace as needed for formatting
-% \vspace{-0.24in}
-
-\begin{homeworkProblem}[2]
-    %%%%% Problem Statement Starts Here
     
-    
-    %%%%% Problem Statement Ends Here
-    
-    \textbf{Solution} \\
-    \textbf{Part 1} % Comment this out if the solution is only one part.
+    \textbf{Part (b)} % Comment this out if the solution is only one part.
     \begin{proof}
-        %%%%% Solution Starts Here (assuming proof)
+    %%%%% Solution Starts Here
         
         
-        %%%%% Solution Ends Here (assuming proof)
+    %%%%% Solution Ends Here
+    \end{proof}
+    
+    \textbf{Part (c)} % Comment this out if the solution is only one part.
+    \begin{proof}
+    %%%%% Solution Starts Here
+        
+        
+    %%%%% Solution Ends Here
+    \end{proof}
+    
+    \textbf{Part (d)} % Comment this out if the solution is only one part.
+    \begin{proof}
+    %%%%% Solution Starts Here
+        
+        
+    %%%%% Solution Ends Here
     \end{proof}
 
 \end{homeworkProblem}
